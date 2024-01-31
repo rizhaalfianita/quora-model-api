@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/dataset', methods=['GET'])
 def get_dataset():
-    fix_file = "../dataset/fix_data.csv"
+    fix_file = "dataset/fix_data.csv"
     fix_df = pd.read_csv(fix_file)
     fix_data_json = fix_df.to_dict(orient='records')
     return jsonify(fix_data_json), 200
