@@ -1,1 +1,6 @@
 Flask==3.0.0
+pandas==1.5.3
+matplotlib==3.7.0
+numpy==1.24.2
+sklearn==0.0.post9
+nltk==3.8.1
