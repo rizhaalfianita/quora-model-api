@@ -7,7 +7,6 @@ def case_folding(question_text):
     return question_text
 
 # Tokenizing
-import nltk
 from nltk.tokenize import RegexpTokenizer
 def tokenizing(question_text):
     tokenizer = RegexpTokenizer(r'\w+')
@@ -28,6 +27,8 @@ def lemmatizing(question_text):
     return question_text
 
 # Stop words
+import nltk
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 def stopword_remove(question_text):
     stop_words = stopwords.words('english')
