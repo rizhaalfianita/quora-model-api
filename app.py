@@ -29,7 +29,7 @@ def predict(text):
 
     result = {
         "input_text": text,
-        "class": label,
+        "predicted_class": label,
         "tfidf": f"{transformed_input}",
         "preprocessed_text": preprocessed_text
     }
